@@ -12,7 +12,7 @@ namespace Petr
         {
             Budik budik = new Budik();
             Digibudik digi = new Digibudik();
-            budik.Zazvon();
+            
             digi.Zazvon();
             Console.ReadKey();
 
