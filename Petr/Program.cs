@@ -12,7 +12,7 @@ namespace Petr
         {
             Budik budik = new Budik();
             Digibudik digi = new Digibudik();
-            
+            Console.WriteLine("Zmenil jsem to ja, Petr");
             
             Console.ReadKey();
 
