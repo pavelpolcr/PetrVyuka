@@ -15,7 +15,7 @@ namespace Petr
         public Budik()
         {
                 Hlasitost = 1;
-                Jmeno = "Budík";
+                Jmeno = "Budík1";
                 Zvoneni = "crr crr crr";
         }
 
