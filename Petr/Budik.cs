@@ -10,18 +10,27 @@ namespace Petr
     {
          public int Hlasitost { get; protected set; }
          public string Jmeno { get; protected set; }
-         public string Zvoneni { get; protected set; }
+
+        public event EventHandler<ParametryUdalosti> Zvoneni;
+
 
         public Budik()
         {
                 Hlasitost = 1;
-                Jmeno = "Budík1";
-                Zvoneni = "crr crr crr";
+                Jmeno = "Budík";
+               
+        }
+
+        protected void PriZvoneni(int Hlasitost)
+        {
+            if (Zvoneni != null)
+                Zvoneni(this, new ParametryUdalosti(Hlasitost));
         }
 
         public void Zazvon()
         {
-                Console.WriteLine(Jmeno + " zvoní:" + Zvoneni);
+            Console.WriteLine(Jmeno + " zvoní:");
+            
         }
 
 

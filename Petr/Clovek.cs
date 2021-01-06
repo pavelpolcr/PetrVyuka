@@ -15,7 +15,7 @@ namespace Petr
             Jmeno = "Člověk";
         }
 
-        public void VzbudSe()
+        public virtual void VzbudSe(object sender, ParametryUdalosti e)
         {
             Console.WriteLine(Jmeno + " vstává");
         }

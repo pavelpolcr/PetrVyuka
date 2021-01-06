@@ -12,5 +12,11 @@ namespace Petr
         {
             Jmeno = "Babička";
         }
+
+        public override void VzbudSe(object sender, ParametryUdalosti e)
+        {
+            if (e.Hlasitost >= 2)
+                Console.WriteLine("Babička vstává");
+        }
     }
 }

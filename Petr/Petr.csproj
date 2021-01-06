@@ -47,6 +47,7 @@
     <Compile Include="Budik.cs" />
     <Compile Include="Clovek.cs" />
     <Compile Include="Digibudik.cs" />
+    <Compile Include="ParametryUdalosti.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

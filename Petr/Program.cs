@@ -15,7 +15,14 @@ namespace Petr
             Clovek clovek = new Clovek();
             Babicka babicka = new Babicka();
 
-            babicka.VzbudSe();
+            budik.Zvoneni += clovek.VzbudSe;
+            budik.Zvoneni += babicka.VzbudSe;
+
+            digi.Zvoneni += clovek.VzbudSe;
+            digi.Zvoneni += babicka.VzbudSe;
+
+            budik.Zazvon();
+            digi.Zazvon();
             
             Console.ReadKey();
 

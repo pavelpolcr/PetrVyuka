@@ -10,9 +10,9 @@ namespace Petr
     {
         public Digibudik()
         {
-            Jmeno = "Digibudik";
-            Hlasitost = 1;
-            Zvoneni = "Bip bip bip";
+            Jmeno = "Digibudík";
+            Hlasitost = 2;
+            
         }
     }
 }
